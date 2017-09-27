@@ -108,12 +108,56 @@ textarea{
 
 /*DEFAULT COMPONENT START*/
 /*header start*/
+.header .top-header {
+    padding: 40px 0;
+    border-bottom: 2px solid #edeff1;
+    font-family: 'HarmoniaSansProCyr-Regular';
+    font-size: 12px;
+    color: #34404b;
+}
+.header .top-header .contact-list{
+    display: flex;
+    justify-content: space-between;
+}
+.top-header .contact-list li + li{
+    padding-left: 10px;
+}
+.top-header .contact-list icon-mail-ic li{
+    padding-right: 16px;
+}
 .header .bottom-header{
     padding: 40px 0;
+    font-size: 16px;
+}
+.header .bottom-header span{
+
 }
 .header .bottom-header .user-controls{
     margin-left: auto;
 }
+.header .bottom-header .logo{
+    padding-right: 86px;
+}
+.header .bottom-header .user-controls a + a {
+    padding-left: 34px;
+}
+.header .bottom-header .header-nav a + a {
+    padding-left: 40px;
+}
+.header .bottom-header .user-controls .last{
+    position: relative;
+}
+.header .bottom-header .user-controls span{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #34404b;
+    color: #fff;
+    bottom: 25px;
+    padding: 2px 5px;
+    font-size: 10px;
+    right: 4px;
+}
+
 /*header end*/
 /*DEFAULT COMPONENT END*/
 
