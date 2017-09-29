@@ -133,6 +133,7 @@ textarea{
     text-transform: uppercase;
     font-size: 36px;
     margin-bottom: 25px;
+    color: #34404b;
 }
 .title.big{
     font-size: 52px;
@@ -199,7 +200,6 @@ textarea{
     position: relative;
     height: 372px;
 }
-
 .product-item:hover{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -217,14 +217,20 @@ textarea{
     transition: all .3s linear;
     height: 216px;
 }
-.product-item:hover .item-img img{
+.product-item .item-img img{
     max-height: 100%;
+}
+.product-item:hover .sizes{
+    padding-bottom: 32px;
 }
 .product-item:hover .item-price{
     display: none;
 }
 .product-item:hover .item-title{
     color: #ff5912;
+}
+.product-item:hover .item-img{
+    height: 90px;
 }
 .product-item .more-info-on-hover{
     opacity: 0;
@@ -241,12 +247,15 @@ textarea{
     z-index: 99;
 
 }
-.product-item:hover .item-img{
-    height: 90px;
-}
 .product-item .colors{
     border-bottom: 1px solid #f2f4f7;
     padding-bottom: 30px;
+}
+.product-item .icon-add-to-cart-ic{
+    margin: 0 28px;
+}
+.product-item .icon-add-to-cart-ic{
+
 }
 .product-item li{
     display: inline-block;
@@ -290,6 +299,30 @@ textarea{
 .sale-carousel .carousel-indicators li.active{
     background-color: #ff5912;
     height: 36px;
+}
+.sale-carousel .carousel-inner .subtitle{
+    color: #3c4751;
+    font-size: 18px;
+    font-family: 'HarmoniaSansProCyr-Regular';
+    line-height: 1.5;
+
+}
+.sale-carousel .carousel-inner .subtitle-text{
+    color: #495662;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+.sale-carousel .carousel-inner .price{
+    font-size: 18px;
+    font-family: 'HarmoniaSansProCyr-Regular';
+    margin-right: 30px;
+}
+.sale-carousel .carousel-inner .order-now{
+    font-size: 18px;
+}
+.sale-carousel .carousel-inner .icon-cart-hover-ic{
+    margin-right: 16px;
 }
 .kit{
     padding: 20px 60px;
