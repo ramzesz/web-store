@@ -310,13 +310,22 @@ button{
     margin-top: 30px;
 }
 .icon-share-ic:hover{
-    background-position: -18px -59px;
+    background-position: -44px -59px;
 }
 .icon-add-to-cart-ic:hover{
     background-position: 0px -38px;
 }
 .icon-like-ic:hover{
+    background-position: -38px -80px;
+}
+.icon-search-ic:hover{
     background-position: -81px 0px;
+}
+.icon-user-ic:hover{
+    background-position: 0px -59px;
+}
+.icon-cart-ic:hover{
+    background-position: -20px -59px;
 }
 input[type="checkbox"]{
     display: none;
