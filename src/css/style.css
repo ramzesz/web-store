@@ -145,6 +145,9 @@ button{
     background-color: #ff5912;
     color: #fff;
 }
+.text-14{
+    font-size: 14px;
+}
 /*DEFAULT CLASSES END*/
 
 /*DEFAULT COMPONENT START*/
@@ -197,6 +200,9 @@ button{
 }
 .header .bottom-header .header-nav a + a {
     padding-left: 40px;
+}
+.bottom-header .header-nav a:hover{
+    color: #ff5912;
 }
 .header .bottom-header .user-controls .last{
     position: relative;
@@ -418,7 +424,7 @@ input[type="checkbox"]:checked + label::before{
     position: relative;
 }
 .sales-block .light-orange-bg,
-.sales-block. .orange-bg{
+.sales-block .orange-bg{
     display: inline-block;
     width: 50px;
     height: 60px;
@@ -427,11 +433,40 @@ input[type="checkbox"]:checked + label::before{
 .sales-block .light-orange-bg{
     transform: rotate(-45deg);
 }
-.sales-block. .orange-bg{
+.sales-block .orange-bg{
     transform: rotate(45deg);
     position: absolute;
     left: 0;
     top: 0;
+}
+.sales-block  span{
+    transform: rotate(-45deg);
+    color: #fff;
+    display: block;
+    margin: 8px 0;
+}
+.sales-block .sale{
+    font-family: Harmonia_italic;
+}
+.sales-block .percent{
+    font-size: 18px;
+    font-weight: 900;
+}
+.kit .right-title{
+    font-size: 22px;
+    display: block;
+}
+.kit .price{
+    font-weight: 900;
+    font-style: normal;
+    font-size: 32px;
+    padding-left: 15px;
+}
+.adv .flex-container{
+    display: block;
+}
+.adv .area{
+    font-size: 16px;
 }
 .category-wrap{
     padding-top: 120px;
@@ -465,6 +500,23 @@ input[type="checkbox"]:checked + label::before{
     top: 50%;
     outline: none;
 }
+.new-arrivals .text-14{
+    margin-bottom: 82px;
+}
+.load-more {
+    height: 60px;
+    margin: 80px 0 120px;
+}
+.load-more .circle{
+    border: 2px;
+    /*width: 8px;
+    height: 8px;*/
+    background-color: #ff5912;
+    border-radius: 50%;
+}
+.load-more span:active{
+
+}
 /* Product slider start*/
 .product-slider{
     width: 330px;
@@ -485,9 +537,36 @@ input[type="checkbox"]:checked + label::before{
     font-size: 18px;
 }
 footer{
+    margin-top: 60px;
     padding: 88px 0 83px;
 }
+/*footer  .footer-nav li + li{
+    margin-top: 22px;
+}*/
 .payment-methods-icon li + li{
     padding-left: 15px;
+}
+.footer-nav ul + ul{
+    margin-left: 90px;
+}
+.payment-methods{
+    margin-left: 60px;
+}
+.payment-methods .payment-methods-icon {
+    margin-top: 20px;
+}
+.footer-nav ul{
+    list-style: unset;
+}
+.footer-nav .payment-methods ul{
+    list-style:none;
+}
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.footer-logo img{
+    margin-bottom: 22px;
 }
 /*Product description end*/
