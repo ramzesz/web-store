@@ -79,6 +79,9 @@ a{
     color: inherit;
     text-decoration: none;
 }
+a:hover{
+    text-decoration: none;
+}
 img{
     max-width: 100%;
 }
@@ -147,6 +150,7 @@ button{
 }
 .text-14{
     font-size: 14px;
+    font-family: Harmonia_regular;
 }
 /*DEFAULT CLASSES END*/
 
@@ -181,6 +185,12 @@ button{
 }
 .top-header .contact-list icon-mail-ic li{
     padding-right: 16px;
+}
+.top-header .social a:hover{
+    color: #ff5912;
+}
+.top-header .social a + a{
+    padding-left: 24px;
 }
 .header .bottom-header{
     padding: 40px 0;
@@ -225,6 +235,7 @@ button{
     padding: 30px 10px;
     position: relative;
     height: 372px;
+    margin-bottom: 20px;
 }
 .product-item:hover{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -272,6 +283,9 @@ button{
     opacity: 1;
     z-index: 99;
 }
+.product-item .more-info-on-hover .item-controls{
+    padding-top: 30px;
+}
 .product-item .colors{
     border-bottom: 1px solid #f2f4f7;
     padding-bottom: 30px;
@@ -287,6 +301,23 @@ button{
     width: 13px;
     height: 13px;
     border-radius: 50%;
+}
+.product-description .subtitle{
+    font-size: 18px;
+    font-family: Harmonia_bold;
+    margin-bottom: 38px;
+}
+.product-description .text{
+    font-size: 16px;
+    font-family: Harmonia_regular;
+}
+.product-description .text-section{
+    padding-bottom: 80px;
+}
+.item-count span{
+    font-size: 18px;
+    font-family: Harmonia_semibold;
+    padding-right: 10px;
 }
 .subscribe-form{
     padding: 35px 45px;
@@ -357,6 +388,21 @@ input[type="checkbox"]:checked + label{
 input[type="checkbox"]:checked + label::before{
     border-color: #ff5912;
 }
+.checkbox-group + .checkbox-group{
+    margin-top: 37px;
+}
+.aside-title{
+    font-size: 18px;
+    font-family: Harmonia_black;
+    padding-bottom: 40px;
+}
+.aside-categories{
+    font-size: 16px;
+    font-family: Harmonia_bold;
+}
+.aside-categories li + li{
+    padding-top: 42px;
+}
      /*DEFAULT COMPONENT END*/
 .sale-carousel{
     min-height: 650px;
@@ -420,6 +466,7 @@ input[type="checkbox"]:checked + label::before{
     padding: 20px 60px;
     border: 1px solid #eaedef;
 }
+
 .sales-block{
     position: relative;
 }
@@ -462,8 +509,13 @@ input[type="checkbox"]:checked + label::before{
     font-size: 32px;
     padding-left: 15px;
 }
+.kit .price-block .dollar{
+    font-size: 22px;
+}
+.kit .price-block{
+    font-family: Harmonia_black;
+}
 .adv{
-
     height: 8.5em;
 }
 .adv .flex-container{
@@ -483,6 +535,52 @@ input[type="checkbox"]:checked + label::before{
 .category-wrap{
     padding-top: 120px;
     padding-bottom: 60px;
+}
+.category-wrap .load-more{
+    margin: 0;
+}
+.mobile-sidebar-btn{
+    display: none;
+    font-size: 30px;
+    color: #ff5912;
+    margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+    .mobile-sidebar-btn{
+        display: block;
+    }
+    .mobile-sidebar-wrap{
+        position: absolute;
+        transform: translateX(-150%);
+        z-index: 99;
+        transition: all .3s linear;
+        left: 0;
+        right: 0;
+    }
+    .mobile-sidebar-btn .fa{
+        transition: all .3s linear;
+    }
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        z-index: -1;
+        background-color: rgba(0, 0, 0, .4);
+        transition: all .5s linear;
+    }
+    main.show .mobile-sidebar-wrap{
+        transform: translateX(0);
+    }
+    main.show .overlay{
+        opacity: 1;
+        z-index: 98;
+    }
+    main.show .mobile-sidebar-btn .fa{
+        transform: rotate(-180deg);
+    }
 }
 .ui-widget.ui-widget-content{
     border: none;
@@ -525,9 +623,8 @@ input[type="checkbox"]:checked + label::before{
     height: 8px;
     background-color: #ff5912;
     border-radius: 50%;
-}
-.load-more span:active{
-
+    display: inline-block;
+    margin-top: 26px;
 }
 .best-sales span{
     padding-right: 25px;
@@ -535,23 +632,22 @@ input[type="checkbox"]:checked + label::before{
 .best-sales .text-14{
     margin-bottom: 80px;
 }
+
 .best-items .fa.fa-star{
     color: #ff5912;
-}
-.best-items .fa.fa-star:active{
-
 }
 .best-items .item-info li{
     display: inline-block;
 }
 .best-item-img{
-    padding: 35px 23px;
-    border-right: 1px solid #f5f5f6;
+    padding: 35px 23px ;
 }
 .best-item-description{
-    padding: 47px 30px 50px 0;
+    padding-left: 25px;
+    margin:  47px 30px 50px 0;
     font-size: 16px;
     font-family: Harmonia_bold;
+    border-left: 1px solid #f5f5f6;
 }
 .best-item-description .item-title{
     font-family: Harmonia_bold;
@@ -560,6 +656,22 @@ input[type="checkbox"]:checked + label::before{
 }
 .best-item-description .item-info .price{
     padding: 0;
+}
+.best-items:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.best-item-description:hover .item-info{
+    display: none;
+}
+.best-item-description .best-item-description-hover{
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.best-item-description:hover .best-item-description-hover{
+    opacity: 1;
+    position: relative;
 }
 /* Product slider start*/
 .product-slider{
@@ -580,13 +692,27 @@ input[type="checkbox"]:checked + label::before{
     color: #ff5912;
     font-size: 18px;
 }
+.choose-size .choose-size-text{
+    font-size: 18px;
+    padding-right: 23px;
+}
+.radio-list-btn .size-radio {
+    padding-left: 5px;
+}
+.radio-list-btn .size-radio + .size-radio:before{
+    content: "-";
+    padding-right: 5px;
+}
 footer{
+    font-family: Harmonia_regular;
     margin-top: 60px;
     padding: 88px 0 83px;
+    font-size: 14px;
 }
-/*footer  .footer-nav li + li{
+
+footer  .footer-nav .menu li + li{
     margin-top: 22px;
-}*/
+}
 .payment-methods-icon li + li{
     padding-left: 15px;
 }
@@ -612,5 +738,34 @@ footer{
 }
 .footer-logo img{
     margin-bottom: 22px;
+}
+.order-form{
+    border-top: 1px solid #edeff1;
+    border-bottom: 1px solid #edeff1;
+}
+.choose-size{
+    padding: 42px 0;
+}
+.order-now{
+    margin-top: 40px;
+}
+.order-now .price{
+    font-size: 20px;
+    font-family: Harmonia_black;
+}
+.order-now .btn{
+    width: 135px;
+    height: 50px;
+    border-radius: 25px;
+}
+.order-now .item-controls{
+    display: flex;
+}
+.order-now .item-controls li +li{
+    padding-left: 14px;
+}
+.product-option-form .choose-size span{
+    font-family: Harmonia_semibold;
+    font-size: 18px;
 }
 /*Product description end*/

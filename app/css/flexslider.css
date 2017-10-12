@@ -243,10 +243,7 @@ html[xmlns] .flexslider .slides {
   background-color: #f4f6f8;
 }
 .flex-control-thumbs li:hover{
-  background-color: #ff59112;
-}
-.flex-control-thumbs li:hover img {
-
+  background-color: #ff5912;
 }
 .flex-control-thumbs img:hover {
   opacity: .1;
@@ -254,7 +251,6 @@ html[xmlns] .flexslider .slides {
 .flex-control-thumbs li:hover img{
   opacity: .5;
 }
-
 .flex-control-thumbs img {
   height: 100%;
   display: block;
