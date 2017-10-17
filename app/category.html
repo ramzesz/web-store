@@ -35,12 +35,13 @@
                     <li><i class="icon icon-phone-book-ic"></i></li>
                     <li>996 - 5553 - 453</li>
                 </ul>
-                <nav class="social">
+                <nav class="social text-center">
                     <a href=""><i class="fa fa-facebook"></i></a>
                     <a href=""><i class="fa fa-twitter"></i></a>
                     <a href=""><i class="fa fa-google-plus"></i></a>
                     <a href=""><i class="fa fa-instagram"></i></a>
                 </nav>
+
             </div>
         </div>
     </div>
@@ -52,14 +53,22 @@
                         <img src="img/logo.png" alt="logo">
                     </a>
                 </div>
-                <nav class="header-nav">
-                    <a href="">Home</a>
-                    <a href="">Products</a>
-                    <a href="">Hot Deals</a>
-                    <a href="">About</a>
-                    <a href="">Contact</a>
-                </nav>
-                <nav class="user-controls">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="pull-right collapse navbar-collapse" id="header-nav">
+                    <nav class="header-nav">
+                        <a href="">Home</a>
+                        <a href="">Products</a>
+                        <a href="">Hot Deals</a>
+                        <a href="">About</a>
+                        <a href="">Contact</a>
+                    </nav>
+                </div>
+                <nav class="user-controls text-center">
                     <a href=""><i class="icon icon-search-ic"></i></a>
                     <a href=""><i class="icon icon-user-ic"></i></a>
                     <a href="" class="last">
@@ -467,8 +476,10 @@
                     <span class="text">join us now to get all news and special offers</span>
                 </div>
                 <form class="flex-container align-center">
-                    <label for="subscribe-email" class="icon icon-mail-ic"></label>
-                    <input type="text" class="subtitle-input" id="subscribe-email" placeholder="type your email here">
+                    <div class="subscribe-block">
+                        <label for="subscribe-email" class="icon icon-mail-ic"></label>
+                        <input type="text" class="subtitle-input" id="subscribe-email" placeholder="type your email here">
+                    </div>
                     <button class="btn btn-default">join us</button>
                 </form>
             </div>
