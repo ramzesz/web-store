@@ -254,7 +254,7 @@ button{
 .navbar-toggle{
     background-color: #ff5912;
 }
-.navbar-toggle span{
+.navbar-toggle .icon-bar{
     background-color: #fff;
 }
 @media (max-width: 991px){
@@ -284,9 +284,16 @@ button{
                 flex-wrap: wrap;
     }
     .navbar-toggle{
-        /*margin-top: 0;*/
-        /*margin-right: 0;*/
-        margin-bottom: 30px;
+        margin-top: 0;
+        margin-right: 0;
+    }
+    .bottom-header .header-nav{
+        position: relative;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 30px 15px;
+        text-align: right;
     }
 }
 /*header end*/
